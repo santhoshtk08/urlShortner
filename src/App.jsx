@@ -8,6 +8,8 @@ function App() {
   const [invalidMsg, setInvalidMsg] = useState("");
   const [shortenLink, setShortenLink] = useState("");
   const [copied, setCopied] = useState(false);
+
+  
   const handleShorten = async () => {
     if (!validURl.isUri(urlInput)) {
       setInvalidMsg("Invalid URL");
